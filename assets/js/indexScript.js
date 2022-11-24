@@ -13,4 +13,4 @@ let valor = setInterval(function(){
         teste.remove();
         clearInterval(valor);
     }
-}, 1000)
+}, 1000);
