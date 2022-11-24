@@ -1,77 +1,78 @@
-main{
-    background-image: url(../../img/fundob3.png);
-    background-position: top;
-    background-size: 45px;
-    height: auto;
+main {
+background-image: url(../../img/fundob3.png);
+background-position: top;
+background-size: 45px;
+height: auto;
 }
 
-::-webkit-scrollbar{
-    background-color: #7f00b5;
+::-webkit-scrollbar {
+background-color: #7f00b5;
 }
 
-::-webkit-scrollbar-thumb{
-    background-color: #b300ff;
-    border-radius: 10px;
+::-webkit-scrollbar-thumb {
+background-color: #b300ff;
+border-radius: 10px;
 }
 
-section#indic{
-    background-color: rgb(187, 0, 255);
-    width: 80%;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 20px;
+section#indic {
+background-color: rgb(187, 0, 255);
+width: 80%;
+margin: 0 auto;
+display: flex;
+flex-direction: column;
+justify-content: center;
+gap: 20px;
 }
 
-#titulo{
-    text-shadow: 3px 4px 0px #380051;
+#titulo {
+text-shadow: 3px 4px 0px #380051;
 }
 
-.indication{
-    padding: 28px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 30px;
+.indication {
+padding: 28px;
+display: flex;
+flex-direction: column;
+align-items: center;
+gap: 30px;
 }
 
-#linha{
-    width: 100%;
-    border-bottom: 5px dashed black;
-    margin-top: 40px;
+#linha {
+width: 100%;
+border-bottom: 5px dashed black;
+margin-top: 40px;
 }
 
-div#areaCartaz{
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
+div#areaCartaz {
+display: flex;
+align-items: center;
+justify-content: space-around;
 }
 
-div#areaCartaz img{
-    outline: 5px solid #540078;
-    width: 20%;
-    border-radius: 5px;
+div#areaCartaz img {
+outline: 5px solid #540078;
+width: 20%;
+border-radius: 5px;
 }
 
-div#areaCartaz p, div#paragrafoFinal p{
-    width: 60%;
-    padding: 20px;
-    background-color: #7f00b5;
-    box-shadow: 11px 10px 0px 0px #380051;
-    text-align:center;
+div#areaCartaz p,
+div#paragrafoFinal p {
+width: 60%;
+padding: 20px;
+background-color: #7f00b5;
+box-shadow: 11px 10px 0px 0px #380051;
+text-align: center;
 }
 
-span{
-    font-size: 1.5em;
+span {
+font-size: 1.5em;
 }
 
-div#paragrafoFinal p{
-    margin: 0 auto;
-    width: 80%;
+div#paragrafoFinal p {
+margin: 0 auto;
+width: 80%;
 }
 
-div#areaGif img{
-    outline: 5px solid #540078;
-    border-radius: 2px;
+div#areaGif img {
+outline: 5px solid #540078;
+border-radius: 2px;
 }
