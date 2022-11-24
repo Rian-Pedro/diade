@@ -1,18 +1,17 @@
 main {
 display: flex;
-background-color: #2f0025eb;
 }
 
 div#fundo1 {
 width: 20%;
-background-image: url(../../../img/fundo1.png);
+background-image: url(../../img/fundob4.png);
 background-repeat: no-repeat;
 background-size: cover;
 }
 
 div#fundo2 {
 width: 20%;
-background-image: url(../../../img/fundo2.png);
+background-image: url(../../img/fundob5.png);
 background-repeat: no-repeat;
 background-size: cover;
 }
@@ -24,6 +23,8 @@ background-image: url("../../../img/fundob1.png");
 background-repeat: no-repeat;
 background-size: cover;
 padding: 20px;
+overflow: auto;
+text-align: center;
 }
 
 h1 {
@@ -54,27 +55,3 @@ align-items: center;
 font-size: 5em;
 z-index: 1;
 }
-
-@keyframes aberturaTeste {
-0% {
-color: #ffffff00;
-background-image: url("../../../img/diade.jpg");
-background-size: cover;
-opacity: 100%;
-}
-
-50% {
-color: white;
-background-image: url("../../../img/diade.jpg");
-background-size: cover;
-opacity: 100%;
-}
-
-100% {
-color: rgba(255, 255, 255, 0);
-background-image: url("../../../img/diade.jpg");
-background-size: cover;
-opacity: 0%;
-}
-}
-    
