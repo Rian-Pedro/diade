@@ -3,41 +3,41 @@ import {
 } from './indicacoes.js';
 
 class Indicacao {
-	constructor(obj) {
+	constructor(obj,linha) {
 		Object.defineProperties(this, {
 			'nome': {
-				enumerable: true,
 				value: obj.nome
 			},
 			'text1': {
-				enumerable: true,
 				value: obj.text1
 			},
 			'text2': {
-				enumerable: true,
 				value: obj.text2
 			},
 			'cartaz': {
-				enumerable: true,
 				value: obj.cartaz
 			},
 			'gif': {
-				enumerable: true,
 				value: obj.gif
 			}
 		});
 
 		this.sect = document.querySelector("#indic");
-		this.sect.appendChild(this.criaDivPrincipal(this.nome, this.text1, this.cartaz, this.gif, this.text2));
+		this.sect.appendChild(this.criaDivPrincipal(this.nome, this.text1, this.cartaz, this.gif, this.text2,linha));
 	}
 
-	criaDivPrincipal(nome, text1, cartaz, gif, text2) {
+	criaDivPrincipal(nome, text1, cartaz, gif, text2,linha) {
 		const div = document.createElement('div');
 		div.classList.add('indication');
 		div.appendChild(this.criaAreaCartaz(nome, text1, cartaz));
 		div.appendChild(this.criaAreaGif(gif));
 		if (text2) {
 			div.appendChild(this.criaAreaParagrafoFinal(text2));
+		}
+		if (linha) {
+			const divLinha = document.createElement('div');
+			divLinha.classList.add('linha');
+			div.appendChild(divLinha);
 		}
 		return div;
 	}
@@ -85,6 +85,10 @@ class Indicacao {
 
 }
 
-for (let i of indications) {
-	const teste = new Indicacao(i);
+for (let i = 0; i < indications.length; i++) {
+	let valor = true;
+	if (i === indications.length - 1) {
+		valor = false;
+	}
+	const ind = new Indicacao(indications[i],valor);
 }

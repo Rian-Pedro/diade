@@ -27,7 +27,7 @@ align-items: center;
 gap: 30px;
 }
 
-#linha {
+.linha {
 width: 100%;
 border-bottom: 5px dashed black;
 margin-top: 40px;
